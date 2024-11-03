@@ -20,7 +20,7 @@ public final class FoliaSupport {
         Class<?> tickThreadClass = String.class; // thread will never be instance of String
         if (IS_FOLIA) {
             try {
-                tickThreadClass = Class.forName("io.papermc.paper.util.TickThread");
+                tickThreadClass = Class.forName("ca.spottedleaf.moonrise.common.util.TickThread");
             } catch (ClassNotFoundException e) {
                 throw new AssertionError(e);
             }
